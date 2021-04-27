@@ -48,6 +48,7 @@ int min(int a, int b, int c)
 int levenstein(int len_a, int len_b, char *a, char *b)
 {
 
+    // Output matrix
     int dm[len_a + 1][len_b + 1];
 
     for (int i = 0; i <= len_a; i++)
