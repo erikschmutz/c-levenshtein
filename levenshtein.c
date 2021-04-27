@@ -45,7 +45,7 @@ int min(int a, int b, int c)
     return mi;
 }
 
-int levenstein(int len_a, int len_b, char *a, char *b)
+int levenshtein(int len_a, int len_b, char *a, char *b)
 {
 
     // Output matrix
@@ -93,5 +93,5 @@ int main(int argc, char *argv[])
     int len_a = load_file(buffer_a, file_a);
     int len_b = load_file(buffer_b, file_b);
 
-    printf("Levenstein dist %i", levenstein(len_a, len_b, buffer_a, buffer_b));
+    printf("Levenshtein dist %i", levenshtein(len_a, len_b, buffer_a, buffer_b));
 }
